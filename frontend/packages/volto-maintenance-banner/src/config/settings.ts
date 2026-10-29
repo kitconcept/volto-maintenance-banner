@@ -1,4 +1,4 @@
-import type { ConfigType } from "@plone/registry";
+import type { ConfigType } from '@plone/registry';
 import warningSVG from '@plone/volto/icons/warning.svg';
 
 export default function install(config: ConfigType) {
