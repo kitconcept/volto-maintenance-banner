@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cache="http://namespaces.zope.org/cache"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <!-- Override /@types service to conditionally hide some behaviors -->
+
+  <plone:service
+      method="GET"
+      factory=".maintenance_banner.MaintenanceBannerService"
+      for="zope.interface.Interface"
+      permission="zope2.View"
+      name="@maintenance-banner"
+      />
+
+</configure>

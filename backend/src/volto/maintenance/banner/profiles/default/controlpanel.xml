@@ -3,6 +3,17 @@
         name="portal_controlpanel"
 >
 
-  <!-- -*- extra stuff goes here -*- -->
+  <configlet action_id="maintenance-banner"
+             appId="maintenance-banner"
+             category="plone-general"
+             condition_expr=""
+             icon_expr="string:alert"
+             title="Maintenance Banner"
+             url_expr="string:${portal_url}/maintenance-banner"
+             visible="True"
+             i18n:attributes="title"
+  >
+    <permission>Manage portal</permission>
+  </configlet>
 
 </object>

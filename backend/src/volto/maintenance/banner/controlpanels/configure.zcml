@@ -5,6 +5,9 @@
     i18n_domain="volto.maintenance.banner"
     >
 
-  <!-- -*- extra stuff goes here -*- -->
+  <adapter
+      factory=".maintenance_banner.MaintenanceBannerControlpanel"
+      name="maintenance-banner"
+      />
 
 </configure>
