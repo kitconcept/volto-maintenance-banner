@@ -1,0 +1,16 @@
+{
+    "title": "volto-maintenance-banner",
+    "description": "Volto Maintenance Banner",
+    "project_slug": "volto-maintenance-banner",
+    "author": "kitconcept GmbH",
+    "email": "info@kitconcept.com",
+    "use_prerelease_versions": false,
+    "plone_version": "6.2.2",
+    "volto_version": "19.6.0",
+    "python_package_name": "volto.maintenance.banner",
+    "npm_package_name": "@kitconcept/volto-maintenance-banner",
+    "github_organization": "kitconcept",
+    "container_registry": "github",
+    "initialize_documentation": true,
+    "__template__": "monorepo_addon"
+}
