@@ -8,3 +8,10 @@
 -->
 
 <!-- towncrier release notes start -->
+
+## 1.0.0a1 (2026-10-29)
+
+
+### Feature
+
+- Add Maintenance Banner controlpanel and @maintenance-banner endpoint. @Tishasoumya-02

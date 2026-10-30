@@ -7,3 +7,15 @@
 -->
 
 <!-- towncrier release notes start -->
+
+## 1.0.0-alpha.1 (2026-10-29)
+
+
+### Feature
+
+- Add Maintenance Banner component in the `aboveApp` slot and control panel icon. @Tishasoumya-02 
+
+
+### Tests
+
+- Add Cypress acceptance tests for the Maintenance Banner. @Tishasoumya-02
