@@ -1,9 +1,9 @@
 from AccessControl.SecurityManagement import newSecurityManager
+from kitconcept.maintenancebanner.interfaces import IBrowserLayer
 from Products.CMFPlone.factory import _DEFAULT_PROFILE
 from Products.CMFPlone.factory import addPloneSite
 from Products.GenericSetup.tool import SetupTool
 from Testing.makerequest import makerequest
-from volto.maintenance.banner.interfaces import IBrowserLayer
 from zope.interface import directlyProvidedBy
 from zope.interface import directlyProvides
 
@@ -64,13 +64,13 @@ if site_id not in app.objectIds():
 
     portal_setup: SetupTool = site.portal_setup
     portal_setup.runAllImportStepsFromProfile(
-        "profile-volto.maintenance.banner:default"
+        "profile-kitconcept.maintenancebanner:default"
     )
     transaction.commit()
 
     if EXAMPLE_CONTENT:
         portal_setup.runAllImportStepsFromProfile(
-            "profile-volto.maintenance.banner:initial"
+            "profile-kitconcept.maintenancebanner:initial"
         )
         transaction.commit()
     app._p_jar.sync()

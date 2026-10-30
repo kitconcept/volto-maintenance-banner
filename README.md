@@ -78,7 +78,7 @@ And... you're all set! Your Plone site is up and running locally! 🚀
 
 This monorepo consists of the following distinct sections:
 
-- **backend**: Houses the API and Plone installation, utilizing pip instead of buildout, and includes a policy package named volto.maintenance.banner.
+- **backend**: Houses the API and Plone installation, utilizing pip instead of buildout, and includes a policy package named kitconcept.maintenancebanner.
 - **frontend**: Contains the React (Volto) package.
 - **devops**: Encompasses Docker stack, Ansible playbooks, and cache settings.
 - **docs**: Scaffold for writing documentation for your project.

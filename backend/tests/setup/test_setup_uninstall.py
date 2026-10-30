@@ -1,4 +1,4 @@
-from volto.maintenance.banner import PACKAGE_NAME
+from kitconcept.maintenancebanner import PACKAGE_NAME
 
 import pytest
 
@@ -9,11 +9,12 @@ class TestSetupUninstall:
         installer.uninstall_product(PACKAGE_NAME)
 
     def test_addon_uninstalled(self, installer):
-        """Test if volto.maintenance.banner is uninstalled."""
+        """Test if kitconcept.maintenancebanner is uninstalled."""
+
         assert installer.is_product_installed(PACKAGE_NAME) is False
 
     def test_browserlayer_not_registered(self, browser_layers):
         """Test that IBrowserLayer is not registered."""
-        from volto.maintenance.banner.interfaces import IBrowserLayer
+        from kitconcept.maintenancebanner.interfaces import IBrowserLayer
 
         assert IBrowserLayer not in browser_layers
