@@ -72,7 +72,7 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/volto"]
+packages = ["src/kitconcept"]
 
 [tool.towncrier]
 directory = "news/"
