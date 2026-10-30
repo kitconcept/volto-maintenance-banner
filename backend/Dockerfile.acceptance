@@ -29,8 +29,8 @@ LABEL maintainer="kitconcept GmbH <info@kitconcept.com>" \
       org.label-schema.description="volto-maintenance-banner backend acceptance image." \
       org.label-schema.vendor="kitconcept GmbH"
 
-ENV CONFIGURE_PACKAGES="plone.restapi,plone.volto,plone.volto.cors,volto.maintenance.banner"
-ENV APPLY_PROFILES="volto.maintenance.banner:default"
+ENV CONFIGURE_PACKAGES="plone.restapi,plone.volto,plone.volto.cors,kitconcept.maintenancebanner"
+ENV APPLY_PROFILES="kitconcept.maintenancebanner:default"
 
 # Copy /app from builder
 COPY --from=builder /app /app

@@ -30,9 +30,9 @@ class TestCPMaintenanceBanner:
     @pytest.mark.parametrize(
         "key,expected",
         (
-            ("maintenance_banner.show_banner", False),
-            ("maintenance_banner.banner_title", "Warning"),
-            ("maintenance_banner.date", None),
+            ("kitconcept.maintenance_banner.show_banner", False),
+            ("kitconcept.maintenance_banner.banner_title", "Warning"),
+            ("kitconcept.maintenance_banner.date", None),
         ),
     )
     def test_registry_records(self, key, expected):

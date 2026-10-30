@@ -1,5 +1,5 @@
 [project]
-name = "volto.maintenance.banner"
+name = "kitconcept.maintenancebanner"
 dynamic = ["version"]
 description = "Volto Maintenance Banner"
 readme = "README.md"
@@ -45,7 +45,7 @@ test = [
 
 [project.urls]
 Homepage = "https://github.com/kitconcept/volto-maintenance-banner"
-PyPI = "https://pypi.org/project/volto.maintenance.banner"
+PyPI = "https://pypi.org/project/kitconcept.maintenancebanner"
 Source = "https://github.com/kitconcept/volto-maintenance-banner"
 Tracker = "https://github.com/kitconcept/volto-maintenance-banner/issues"
 
@@ -57,7 +57,7 @@ target = "plone"
 managed = false
 
 [tool.hatch.version]
-path = "src/volto/maintenance/banner/__init__.py"
+path = "src/kitconcept/maintenancebanner/__init__.py"
 
 [build-system]
 requires = ["hatchling"]
@@ -72,7 +72,7 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/volto"]
+packages = ["src/kitconcept"]
 
 [tool.towncrier]
 directory = "news/"
@@ -177,9 +177,9 @@ ignore = [
 testpaths = ["tests"]
 
 [tool.coverage.run]
-source_pkgs = ["volto.maintenance.banner", "tests"]
+source_pkgs = ["kitconcept.maintenancebanner", "tests"]
 branch = true
 parallel = true
 omit = [
-  "src/volto/maintenance/banner/locales/*.py",
+  "src/kitconcept/maintenancebanner/locales/*.py",
 ]

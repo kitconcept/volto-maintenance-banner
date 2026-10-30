@@ -1,4 +1,4 @@
-# volto.maintenance.banner
+# kitconcept.maintenancebanner
 
 Volto Maintenance Banner
 
@@ -8,10 +8,10 @@ TODO: List our awesome features
 
 ## Installation
 
-Install volto.maintenance.banner with uv.
+Install kitconcept.maintenancebanner with uv.
 
 ```shell
-uv add volto.maintenance.banner
+uv add kitconcept.maintenancebanner
 ```
 
 Create the Plone site.

@@ -1,7 +1,7 @@
+from kitconcept.maintenancebanner.testing import ACCEPTANCE_TESTING
+from kitconcept.maintenancebanner.testing import FUNCTIONAL_TESTING
+from kitconcept.maintenancebanner.testing import INTEGRATION_TESTING
 from pytest_plone import fixtures_factory
-from volto.maintenance.banner.testing import ACCEPTANCE_TESTING
-from volto.maintenance.banner.testing import FUNCTIONAL_TESTING
-from volto.maintenance.banner.testing import INTEGRATION_TESTING
 
 
 pytest_plugins = ["pytest_plone"]

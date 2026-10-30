@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<registry>
-
-  <records interface="volto.maintenance.banner.controlpanels.maintenance_banner.IMaintenanceBanner"
-           prefix="maintenance_banner"
-  />
-
-</registry>

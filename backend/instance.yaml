@@ -2,4 +2,4 @@
 
 default_context:
     initial_user_password: 'admin'
-    zcml_package_includes: 'volto.maintenance.banner'
+    zcml_package_includes: 'kitconcept.maintenancebanner'
