@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-11-02 21:21+0000\n"
+"POT-Creation-Date: 2026-11-02 21:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,7 @@ msgid "General"
 msgstr "Generale"
 
 #: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:50
+#: kitconcept/maintenancebanner/profiles/default/controlpanel.xml
 msgid "Maintenance Banner"
 msgstr "Banner di manutenzione"
 

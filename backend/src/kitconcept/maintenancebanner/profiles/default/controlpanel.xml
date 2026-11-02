@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <object xmlns:i18n="http://xml.zope.org/namespaces/i18n"
         name="portal_controlpanel"
+        i18n:domain="kitconcept.maintenancebanner"
 >
 
   <configlet action_id="maintenance-banner"
