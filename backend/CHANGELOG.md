@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0a2 (2026-11-02)
+
+
+### Bugfix
+
+- Add translations for DE, ES, IT, and PT-br. @davisagli 
+
 ## 1.0.0a1 (2026-10-29)
 
 

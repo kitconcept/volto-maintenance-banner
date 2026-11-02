@@ -7,6 +7,31 @@
 -->
 
 <!-- towncrier release notes start -->
+## 1.0.0a2 (2026-11-02)
+
+### Backend
+
+
+#### Bugfix
+
+- Add translations for DE, ES, IT, and PT-br. @davisagli 
+
+
+
+### Frontend
+
+No significant changes.
+
+
+
+
+### Project
+
+No significant changes.
+
+
+
+
 ## 1.0.0a1 (2026-10-29)
 
 ### Backend
