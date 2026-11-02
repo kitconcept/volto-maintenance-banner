@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0a3 (2026-11-02)
+
+
+### Bugfix
+
+- Fix translation of control panel title. @davisagli 
+
 ## 1.0.0a2 (2026-11-02)
 
 
