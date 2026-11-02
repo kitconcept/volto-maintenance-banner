@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2022-05-25 17:12+0000\n"
+"POT-Creation-Date: 2026-11-02 21:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,3 +13,55 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
+
+#: kitconcept/maintenancebanner/profiles.zcml:22
+msgid "Create example content to showcase this addon."
+msgstr "Beispielinhalte erstellen, um diese Erweiterung vorzustellen."
+
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:49
+msgid "General"
+msgstr "Allgemein"
+
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:50
+msgid "Maintenance Banner"
+msgstr "Wartungsbanner"
+
+#: kitconcept/maintenancebanner/profiles.zcml:30
+msgid "Uninstall volto-maintenance-banner setup."
+msgstr "Die Einrichtung von volto-maintenance-banner deinstallieren."
+
+#: kitconcept/maintenancebanner/profiles.zcml:13
+msgid "Volto Maintenance Banner"
+msgstr "Volto-Wartungsbanner"
+
+#. Default: "Date"
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:37
+msgid "label_date"
+msgstr "Datum"
+
+#. Default: "Description"
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:32
+msgid "label_description"
+msgstr "Beschreibung"
+
+#. Default: "Activate maintenance banner"
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:21
+msgid "label_show_banner"
+msgstr "Wartungsbanner aktivieren"
+
+#. Default: "Title"
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:26
+msgid "label_title"
+msgstr "Titel"
+
+#: kitconcept/maintenancebanner/profiles.zcml:22
+msgid "volto-maintenance-banner: Example content"
+msgstr "volto-maintenance-banner: Beispielinhalte"
+
+#: kitconcept/maintenancebanner/profiles.zcml:13
+msgid "volto-maintenance-banner: Install"
+msgstr "volto-maintenance-banner: Installieren"
+
+#: kitconcept/maintenancebanner/profiles.zcml:30
+msgid "volto-maintenance-banner: Uninstall"
+msgstr "volto-maintenance-banner: Deinstallieren"
