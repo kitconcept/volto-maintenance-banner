@@ -32,7 +32,8 @@ class TestCPMaintenanceBanner:
         (
             ("kitconcept.maintenance_banner.show_banner", False),
             ("kitconcept.maintenance_banner.banner_title", "Warning"),
-            ("kitconcept.maintenance_banner.date", None),
+            ("kitconcept.maintenance_banner.date_from", None),
+            ("kitconcept.maintenance_banner.date_to", None),
         ),
     )
     def test_registry_records(self, key, expected):

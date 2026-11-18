@@ -24,7 +24,8 @@ class TestMaintenanceBannerControlpanel:
             "show_banner",
             "banner_title",
             "banner_text",
-            "date",
+            "date_from",
+            "date_to",
         }
 
 
@@ -52,7 +53,8 @@ class TestMaintenanceBannerService:
                     "content-type": "text/html",
                     "encoding": "utf-8",
                 },
-                "date": "2026-11-01",
+                "date_from": "2026-11-01",
+                "date_to": "2026-11-03",
             },
         )
         assert response.status_code == 204
@@ -60,4 +62,5 @@ class TestMaintenanceBannerService:
         assert data["show_banner"] is True
         assert data["banner_title"] == "Downtime"
         assert data["banner_text"]["data"] == "<p>Back soon</p>"
-        assert data["date"] == "2026-11-01"
+        assert data["date_from"] == "2026-11-01"
+        assert data["date_to"] == "2026-11-03"

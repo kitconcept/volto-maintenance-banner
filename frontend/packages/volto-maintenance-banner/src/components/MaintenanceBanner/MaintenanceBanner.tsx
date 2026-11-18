@@ -11,8 +11,15 @@ type MaintenanceBannerData = {
   show_banner?: boolean;
   banner_title?: string;
   banner_text?: { data?: string };
-  date?: string;
+  date_from?: string;
+  date_to?: string;
 };
+
+const dateFormat = {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+} as const;
 
 const MaintenanceBanner = () => {
   const [banner, setBanner] = useState<MaintenanceBannerData>({});
@@ -35,7 +42,7 @@ const MaintenanceBanner = () => {
         .catch(() => setBanner({}));
   }, [dispatch, pathname, previousPathname]);
 
-  const { show_banner, banner_title, banner_text, date } = banner;
+  const { show_banner, banner_title, banner_text, date_from, date_to } = banner;
   return show_banner ? (
     <aside className="maintenance-banner" role="alert">
       <header>
@@ -43,16 +50,15 @@ const MaintenanceBanner = () => {
         <div className="maintenance-banner-title">{banner_title}</div>
       </header>
       <section>
-        {date ? (
+        {date_from || date_to ? (
           <div className="maintenance-banner-date">
-            <FormattedDate
-              date={`${date}T00:00`}
-              format={{
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric',
-              }}
-            />
+            {date_from ? (
+              <FormattedDate date={`${date_from}T00:00`} format={dateFormat} />
+            ) : null}
+            {date_from && date_to ? ' – ' : null}
+            {date_to ? (
+              <FormattedDate date={`${date_to}T00:00`} format={dateFormat} />
+            ) : null}
           </div>
         ) : null}
         {banner_text?.data ? (
