@@ -3,18 +3,20 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     >
 
-  <!-- Example upgrade step
   <genericsetup:upgradeSteps
       profile="kitconcept.maintenancebanner:default"
       source="1000"
       destination="1001"
       >
     <genericsetup:upgradeDepends
-        title="Update registry value"
+        title="Add date_from and date_to registry records"
         import_steps="plone.app.registry"
         />
+    <genericsetup:upgradeStep
+        title="Move date to date_from"
+        handler=".v1001.migrate_date"
+        />
   </genericsetup:upgradeSteps>
-  -->
 
   <!-- -*- extra stuff goes here -*- -->
 

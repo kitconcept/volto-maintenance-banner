@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2026-11-02 21:34+0000\n"
+"POT-Creation-Date: 2026-11-18 10:16+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 msgid "Create example content to showcase this addon."
 msgstr "Criar conteúdo de exemplo para demonstrar este complemento."
 
-#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:49
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:54
 msgid "General"
 msgstr "Geral"
 
-#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:50
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:55
 #: kitconcept/maintenancebanner/profiles/default/controlpanel.xml
 msgid "Maintenance Banner"
 msgstr "Banner de manutenção"
@@ -35,10 +35,15 @@ msgstr "Desinstalar a configuração de volto-maintenance-banner."
 msgid "Volto Maintenance Banner"
 msgstr "Banner de manutenção do Volto"
 
-#. Default: "Date"
+#. Default: "From"
 #: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:37
-msgid "label_date"
-msgstr "Data"
+msgid "label_date_from"
+msgstr "De"
+
+#. Default: "To"
+#: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:42
+msgid "label_date_to"
+msgstr "Até"
 
 #. Default: "Description"
 #: kitconcept/maintenancebanner/controlpanels/maintenance_banner.py:32
