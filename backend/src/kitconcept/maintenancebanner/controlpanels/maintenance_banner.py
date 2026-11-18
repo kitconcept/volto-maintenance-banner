@@ -33,12 +33,12 @@ class IMaintenanceBanner(Interface):
         required=True,
     )
 
-    date_from = schema.Date(
+    date_from = schema.Datetime(
         title=_("label_date_from", default="From"),
         required=False,
     )
 
-    date_to = schema.Date(
+    date_to = schema.Datetime(
         title=_("label_date_to", default="To"),
         required=False,
     )

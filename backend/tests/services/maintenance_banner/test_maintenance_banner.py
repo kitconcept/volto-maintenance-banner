@@ -53,8 +53,8 @@ class TestMaintenanceBannerService:
                     "content-type": "text/html",
                     "encoding": "utf-8",
                 },
-                "date_from": "2026-11-01",
-                "date_to": "2026-11-03",
+                "date_from": "2026-11-01T08:00:00Z",
+                "date_to": "2026-11-03T18:30:00Z",
             },
         )
         assert response.status_code == 204
@@ -62,5 +62,5 @@ class TestMaintenanceBannerService:
         assert data["show_banner"] is True
         assert data["banner_title"] == "Downtime"
         assert data["banner_text"]["data"] == "<p>Back soon</p>"
-        assert data["date_from"] == "2026-11-01"
-        assert data["date_to"] == "2026-11-03"
+        assert data["date_from"] == "2026-11-01T08:00:00+00:00"
+        assert data["date_to"] == "2026-11-03T18:30:00+00:00"

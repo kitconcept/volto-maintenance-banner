@@ -19,6 +19,8 @@ const dateFormat = {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
+  hour: 'numeric',
+  minute: 'numeric',
 } as const;
 
 const MaintenanceBanner = () => {
@@ -53,11 +55,11 @@ const MaintenanceBanner = () => {
         {date_from || date_to ? (
           <div className="maintenance-banner-date">
             {date_from ? (
-              <FormattedDate date={`${date_from}T00:00`} format={dateFormat} />
+              <FormattedDate date={date_from} format={dateFormat} />
             ) : null}
             {date_from && date_to ? ' – ' : null}
             {date_to ? (
-              <FormattedDate date={`${date_to}T00:00`} format={dateFormat} />
+              <FormattedDate date={date_to} format={dateFormat} />
             ) : null}
           </div>
         ) : null}

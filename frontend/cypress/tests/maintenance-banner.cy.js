@@ -35,12 +35,12 @@ context('Maintenance Banner Acceptance Tests', () => {
         show_banner: true,
         banner_title: 'Scheduled maintenance',
         banner_text: 'The site will be down for maintenance.',
-        date_from: '2026-10-31',
-        date_to: '2026-11-02',
+        date_from: '2026-10-31T08:00:00Z',
+        date_to: '2026-11-02T18:30:00Z',
       });
     });
 
-    it('As anonymous I see the banner with title, dates and text', function () {
+    it('As anonymous I see the banner with title, datetimes and text', function () {
       cy.visit('/');
       cy.wait('@banner');
       cy.get('.maintenance-banner')
@@ -50,10 +50,10 @@ context('Maintenance Banner Acceptance Tests', () => {
         'have.text',
         'Scheduled maintenance',
       );
-      cy.get('.maintenance-banner-date').should(
-        'have.text',
-        'October 31, 2026 – November 2, 2026',
-      );
+      cy.get('.maintenance-banner-date')
+        .should('contain', 'October 31, 2026')
+        .and('contain', 'November 2, 2026')
+        .and('contain', ' – ');
       cy.get('.maintenance-banner section').should(
         'contain',
         'The site will be down for maintenance.',
