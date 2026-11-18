@@ -1,22 +1,19 @@
 .maintenance-banner {
-  display: grid;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 25px;
   background-color: var(--maintenance-banner-background, #c4000f);
   color: #fff;
-  grid-template-columns: minmax(max-content, 1fr) minmax(0, 60vw) minmax(0, 1fr);
+  gap: 25px;
   text-align: center;
 
   @media only screen and (max-width: 767px) {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   header {
-    justify-self: start;
-
-    @media only screen and (max-width: 767px) {
-      justify-self: center;
-    }
+    flex-shrink: 0;
 
     svg {
       display: inline-block;
@@ -37,7 +34,8 @@
   }
 
   section {
-    min-width: 0;
+    min-width: 50vw;
+    flex: 1 1 min-content;
     font-size: 18px;
     font-weight: 300;
     line-height: 24px;
